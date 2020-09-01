@@ -1,0 +1,5 @@
+mol new 1M0L_wi.pdb
+set e [atomselect top all]
+measure minmax $e
+measure center $e
+exit

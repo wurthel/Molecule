@@ -1,0 +1,7 @@
+mol new 1M0L_wi.pdb
+set all [atomselect top all]
+set sel [atomselect top "not (resid NNN)"]
+$all set beta 0
+$sel set beta 1
+$all writepdb restraint1.pdb
+exit

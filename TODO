@@ -1,0 +1,38 @@
+# -*- mode: org -*-
+
+** TODO Add repositories [2/5]
+  - [W] insert-molecule
+  - [] genetic-algorithm
+  - [x] distance-geometry
+  - [X] search-bonds
+  - [X] remove-water
+
+** TODO DG Algorithm [8/10]
+  - [X] Initiazilation of bounds matrix
+  - [X] Triangle-inequality smoothing of bounds
+  - [X] Generating a random distance matrix
+  - [X] Smooth the distance (full metrization)
+  - [ ] Smooth the distance (partial metrization)
+  - [X] Conversion of the distance matrix to a metric matrix
+  - [X] Determination of the three largest eigval and eigvec
+  - [X] Generation coordinates
+  - [X] Refinement of the coordinates by minimization of an error function
+    - [X] Distance error function
+    - [W] Chiral error function
+  - [X] Embedding coordinates
+  - [] Force fiels
+    - [] Distance constraints
+    - [] Angle constraints
+  
+** TODO ReadWrite [2/4]
+  - [X] *.pdb files
+    - [X] Read
+    - [X] Write
+  - [] *.xyz files
+    - [] Read
+    - [X] Write
+  - [] *.mol files
+    - [X] Read
+    - [] Write
+  - [X] zmatrix
+    - [X] Read

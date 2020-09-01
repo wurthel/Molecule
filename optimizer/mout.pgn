@@ -1,0 +1,7 @@
+mol new 1M0L_wi.psf
+mol addfile 1M0L_min-0.dcd waitfor all
+set a [atomselect top protein]
+set nf [molinfo top get numframes]
+set res [ expr $nf - 1 ]
+animate write pdb {1M0L_0.pdb} beg $res end $res sel $a
+exit
